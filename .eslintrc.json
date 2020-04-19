@@ -21,6 +21,7 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
+    "indent": ["error", 4],
     "prettier/prettier": "error",
     "import/extensions": [
       "error",
