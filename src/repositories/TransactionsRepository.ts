@@ -24,7 +24,7 @@ class TransactionsRepository {
         return this.transactions;
     }
 
-    private getTotalByType(type: string) {
+    private getTotalByType(type: string): number {
         const totalTransactionsByType = this.transactions
             .filter(transaction => transaction.type === type)
             .reduce(
@@ -40,7 +40,7 @@ class TransactionsRepository {
                 },
                 {
                     value: 0,
-                    type: 'income',
+                    type,
                     title: '',
                     id: '0',
                 },
